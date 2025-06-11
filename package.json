@@ -1,0 +1,21 @@
+{
+  "name": "langgraph-agent",
+  "version": "1.0.0",
+  "main": "agent.ts",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "start": "tsx watch ./agent.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^0.3.45",
+    "@langchain/core": "^0.3.57",
+    "@langchain/langgraph": "^0.3.1",
+    "@langchain/openai": "^0.5.12",
+    "@langchain/tavily": "^0.1.2",
+    "dotenv": "^16.5.0",
+    "tsx": "^4.20.1"
+  }
+}
