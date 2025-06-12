@@ -2,6 +2,7 @@ import { MemorySaver } from "@langchain/langgraph";
 import { createReactAgent } from "@langchain/langgraph/prebuilt";
 import { ChatOpenAI } from "@langchain/openai";
 import { TavilySearch } from "@langchain/tavily";
+import { v4 as uuidv4 } from "uuid";
 import "dotenv/config";
 
 // Initialize the TavilySearch tool with a maximum of 3 results
@@ -25,7 +26,7 @@ const agent = await createReactAgent({
 });
 
 // Create a unique thread ID for identifying that conversation
-const config = { configurable: { thread_id: "42" } };
+const config = { configurable: { thread_id: uuidv4() } };
 
 // First interaction with the agent
 const input = {
