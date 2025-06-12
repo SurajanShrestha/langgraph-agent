@@ -6,7 +6,8 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "start": "tsx watch ./agent.ts"
+    "start": "tsx watch ./agent.ts",
+    "start-simple": "tsx ./simple-agent.ts"
   },
   "type": "module",
   "dependencies": {
