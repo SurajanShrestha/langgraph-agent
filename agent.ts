@@ -5,7 +5,7 @@ import { TavilySearch } from "@langchain/tavily";
 import "dotenv/config";
 import { AIMessage } from "@langchain/core/messages";
 
-// NOTE 💡: INDUSTRY STANDARD WAY OF CREATING AGENT WITH FINE GRAINED CONTROL USING STATE GRAPH
+// NOTE 💡: CREATING AGENT WITH FINE GRAINED CONTROL USING STATE GRAPH
 
 // Initialize the TavilySearch tool with a maximum of 3 results
 const agentTools = [new TavilySearch({ maxResults: 3 })];

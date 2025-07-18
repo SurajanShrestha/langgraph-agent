@@ -6,7 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 import "dotenv/config";
 
 // NOTE 💡: THIS A SIMPLE DEMONSTRATION OF AN AGENT CREATED USING "createReactAgent()".
-// FOR AN INDUSTRY STANDARD AGENT, WE NEED A STATE GRAPH FOR MORE FINE GRAINED CONTROL. REFER TO THE "agent.ts" FILE 📂.
+// "createReactAgent()" IS A STANDALONE DECISION-MAKING AGENT.
+// FOR MORE FINE GRAINED CONTROL, WE USE STATE GRAPHS. REFER TO THE "agent.ts" FILE 📂.
 
 // Initialize the TavilySearch tool with a maximum of 3 results
 const agentTools = [new TavilySearch({ maxResults: 3 })];
